@@ -10,9 +10,9 @@ Conversion of confluence pages to markdown file.
 ## How to do the conversion:
 * One time run: ```pip install markdownify``` to install the dependency
 * Replace the following with actual data in the script:
-**   Replace
-*** EMAIL,
-*** API_TOKEN,
-*** BASE_URL with your actual credentials and site URL.
-*** source_url with the actual Confluence space or page URL you want to export.
+  * Replace
+    * _EMAIL_,
+    * _API_TOKEN_,
+    * _BASE_URL_ with your actual credentials and site URL.
+    * _source_url_ with the actual Confluence space or page URL you want to export.
 * Run the script, the files will be stored in the 'output' folder.
