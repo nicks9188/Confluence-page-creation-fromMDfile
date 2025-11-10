@@ -9,7 +9,7 @@ API_TOKEN = "User_API_Token"
 BASE_URL = "<Confluence_Base_URL>"
 
 # === Source URL (space or page) ===
-SOURCE_URL = "<Confluence_Page/Space_url>"
+SOURCE_URL = "<Confluence_Page/Space_url/url of the page you want to convert.>"
 
 # === Setup ===
 auth = (EMAIL, API_TOKEN)
@@ -66,5 +66,6 @@ for page in pages:
     md = markdownify.markdownify(html, heading_style="ATX")
     with open(f"output/{title}.md", "w", encoding="utf-8") as f:
         f.write(md)
+
 
 print(f"✅ {len(pages)} pages exported to 'output' folder.")
